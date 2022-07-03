@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Monserrat', sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: gray;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-height: 100vh;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.hero_about {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+.hero_title {
+    font-size: 48px;
+    margin: 0;
+}
+.hero_subtitle {
+    font-size: 32px;
+    font-weight: 200;
+    margin: 0;
+}
+.hero_info {
+    font-size: 16px;
+}
+.hero_links {
+    display: flex;
+}
+.hero_link {
+    margin-right: 20px;
+    font-size: 30px;
+    color: #000;
+}
+.hero_link:hover {
+    color: blue;
+}
+
+.hero_box {
+    display: flex;
+    max-width: 500px;
+    overflow: hidden;
+    border: 10px solid #fff;
+    box-shadow: 2px 5px 10px black;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+    animation: ava-animate 5s infinite alternate;
+}
+.hero_box-img {
+    animation: ava-bg;
+}
+
+
+@keyframes ava-animate {
+    0% {
+        border-radius:82% 18% 52% 48% / 58% 71% 29% 42%;
+    }
+    40 {
+        border-radius:46% 54% 84% 16% / 30% 48% 52% 70%;
+    }
+    60% {
+        border-radius:27% 73% 47% 53% / 43% 70% 30% 57%;
+    }
+    100% {
+    border-radius:48% 52% 47% 53% / 43% 53% 47% 57%;
+    }
+}
+
+
+@keyframes ava-bg {
+    from {
+
+    }
+    to {
+
+    }
